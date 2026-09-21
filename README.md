@@ -1,40 +1,51 @@
-# WEB 103 Project 1 - Ultimate Git Guide
+# WEB103 Project 1 - Ultimate Git Guide
 
-Ultimate Git Guide is a listicle web app about eight Git concepts and workflows. It uses Express for routing, serves static assets from `public`, and renders vanilla HTML, CSS, and JavaScript without a frontend framework.
+Submitted by: **Manushri Kumar**
 
-## Features
+About this web app: **Ultimate Git Guide is a beginner-friendly listicle app that teaches common Git commands and workflows. Users can browse Git topics, view key attributes for each one, and click into individual detail pages.**
 
-- [x] Web app uses only HTML, CSS, and JavaScript without a frontend framework
-- [x] Front page is functional and styled
-- [x] Web app displays a title
-- [x] Website displays at least five unique list items
-- [x] Each list item includes at least three displayed attributes
-- [x] Each list item has a corresponding page
-- [x] User can click each item to see a detailed view with all fields
-- [x] Web app serves an appropriate 404 page when no matching route is defined
-- [x] Webpage is styled with PicoCSS
+Time spent: **3** hours
 
-## Routes
+## Required Features
 
-- `/` - all listicle items
-- `/git/starting-a-repository`
-- `/git/commits`
-- `/git/branches`
-- `/git/merging`
-- `/git/github`
-- `/git/undoing-mistakes`
-- `/git/stashing`
-- `/git/history`
+The following **required** functionality is completed:
 
-## Run Locally
+<!-- Make sure to check off completed functionality below -->
+- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
+- [x] **The web app displays a title**
+- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
+- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
+  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
+  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation*
+- [x] **The web app serves an appropriate 404 page when no matching route is defined**
+- [x] **The web app is styled using Picocss**
 
-```bash
-npm install
-npm start
-```
+The following **optional** features are implemented:
 
-Open `http://localhost:3000`.
+- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
 
-## GIF Walkthrough
+The following **additional** features are implemented:
 
-Add the project walkthrough GIF here before submitting.
+- [x] Added Git workflow categories, command syntax, examples, and common mistake notes for each topic
+
+## Video Walkthrough
+
+**Note: please be sure to show the unique URL for each detailed view in your walkthrough.**
+
+Here's a walkthrough of implemented required features:
+
+<img src='./public/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Notes
+
+The main challenge was setting up Express routes for both the list page and individual detail pages while keeping the data organized in one shared file.
+
+## License
+
+Copyright 2026 Manushri Kumar
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.

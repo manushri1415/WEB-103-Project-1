@@ -81,6 +81,12 @@ app.get('/git/:slug', (req, res, next) => {
         <p>${escapeHtml(guide.description)}</p>
 
         <dl class="details-list">
+          <dt>Guide ID</dt>
+          <dd>${escapeHtml(guide.id)}</dd>
+
+          <dt>Slug</dt>
+          <dd>${escapeHtml(guide.slug)}</dd>
+
           <dt>Category</dt>
           <dd>${escapeHtml(guide.category)}</dd>
 
