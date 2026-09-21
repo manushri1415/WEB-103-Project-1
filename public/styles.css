@@ -1,0 +1,140 @@
+:root {
+  --background-color: #f4f6f8;
+  --color: #1f2937;
+  --h1-color: #111827;
+  --h2-color: #111827;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-focus: rgba(37, 99, 235, 0.25);
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #1f2937;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+  background-color: #1f2937;
+}
+
+.site-header nav {
+  padding: 1rem 0;
+}
+
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+section > h2 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.guide-card {
+  margin: 0;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.guide-card-content {
+  padding: 1.25rem;
+}
+
+.guide-number {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.guide-meta {
+  margin-bottom: 0.35rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.guide-card h2 {
+  margin: 0 0 0.75rem;
+  color: #111827;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.guide-card p {
+  color: #374151;
+}
+
+.guide-card code,
+.detail-page code {
+  color: #111827;
+}
+
+.guide-card a[role="button"] {
+  margin-top: 0.5rem;
+}
+
+.detail-page {
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.detail-page h1 {
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.detail-page > p {
+  color: #374151;
+}
+
+.details-list {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.75rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.details-list dt {
+  color: #111827;
+  font-weight: 700;
+}
+
+.details-list dd {
+  margin: 0;
+  color: #374151;
+}
+
+.not-found {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .detail-page {
+    padding: 1rem;
+  }
+
+  .details-list {
+    grid-template-columns: 1fr;
+  }
+}
