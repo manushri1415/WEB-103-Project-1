@@ -1,10 +1,10 @@
 # WEB103 Project 1 - Ultimate Git Guide
 
-Submitted by: **Manushri Kumar**
+Submitted by: **Manushri Muruga Kumar**
 
 About this web app: **Ultimate Git Guide is a beginner-friendly listicle app that teaches common Git commands and workflows. Users can browse Git topics, view key attributes for each one, and click into individual detail pages.**
 
-Time spent: **3** hours
+Time spent: **3.5** hours
 
 ## Required Features
 
@@ -42,7 +42,7 @@ The main challenge was setting up Express routes for both the list page and indi
 
 ## License
 
-Copyright 2026 Manushri Kumar
+Copyright 2026 Manushri Muruga Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
