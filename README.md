@@ -1,10 +1,10 @@
-# WEB103 Project 1 - Ultimate Git Guide
+# WEB103 Project 2 - Ultimate Git Guide
 
 Submitted by: **Manushri Muruga Kumar**
 
-About this web app: **Ultimate Git Guide is a beginner-friendly listicle app that teaches common Git commands and workflows. Users can browse Git topics, view key attributes for each one, and click into individual detail pages.**
+About this web app: **Ultimate Git Guide is a beginner-friendly listicle app that teaches common Git commands and workflows. Users can browse Git topics, search by guide attributes, and open detail pages powered by data from a Render PostgreSQL database.**
 
-Time spent: **3.5** hours
+Time spent: **3** hours
 
 ## Required Features
 
@@ -12,33 +12,58 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation*
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [x] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [x] **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [x] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
-- [x] Added Git workflow categories, command syntax, examples, and common mistake notes for each topic
+- [x] Added unique detail routes for each Git guide
+- [x] Added a database reset script that creates and seeds the `git_guides` table
+
+## Setup
+
+Create a `.env` file in the project root with your Render PostgreSQL credentials:
+
+```env
+PGDATABASE=
+PGHOST=
+PGPASSWORD=
+PGPORT=5432
+PGUSER=
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Reset and seed the database:
+
+```bash
+npm run reset
+```
+
+Start the app:
+
+```bash
+npm start
+```
 
 ## Video Walkthrough
 
-**Note: please be sure to show the unique URL for each detailed view in your walkthrough.**
-
 Here's a walkthrough of implemented required features:
 
-<img src='./public/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./client/src/assets/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
-The main challenge was setting up Express routes for both the list page and individual detail pages while keeping the data organized in one shared file.
+The main challenge was moving the app from local seed data to a PostgreSQL-backed API while keeping the frontend framework-free.
 
 ## License
 
